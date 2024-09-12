@@ -5,27 +5,36 @@ import AuthTopImage from "../../assets/auth-top-image.png";
 
 export default function Auth() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen p-4 lg:p-0">
-      {/* Left section for image */}
-      <div className="w-full hidden lg:w-[50%] md:flex justify-center mb-6 lg:mb-0">
-        <img
-          className="w-full lg:w-[80%] object-cover"
-          src={AuthMainImage}
-          alt="Auth"
-        />
-      </div>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      {/* Outer container with responsive margin and padding */}
+      <div className="w-full max-w-4xl mx-4 md:mx-8 my-6 md:my-8 flex items-center justify-center">
+        {/* Bordered container with rounded corners and shadow */}
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full bg-white border rounded-md shadow-lg overflow-hidden">
+          {/* Left section for image - Hidden on small screens */}
+          <div className="hidden lg:flex md:w-[40%] h-full relative">
+            <img
+              className="w-full h-full object-cover md:mr-6"
+              src={AuthMainImage}
+              alt="Auth"
+            />
+          </div>
 
-      {/* Right section for form */}
-      <div className="w-full lg:w-[50%] mx-auto grid">
-        <div className="flex justify-center mb-3 lg:mb-6">
-          <img
-            className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 object-cover"
-            src={AuthTopImage}
-            alt="Auth Top"
-          />
-        </div>
-        <div className="w-full px-4 md:px-6 lg:px-0">
-          <Outlet />
+          {/* Right section for form */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-6">
+            {/* Top image */}
+            <div className="mb-6 flex justify-center">
+              <img
+                className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover"
+                src={AuthTopImage}
+                alt="Auth Top"
+              />
+            </div>
+
+            {/* Form section */}
+            <div className="w-full max-w-md">
+              <Outlet />
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import Food from "../pages/main/Food";
 import Foods from "../pages/main/Foods";
 import Home from "../pages/main/Home";
 import TermsAndConditions from "../pages/main/TermsAndConditions";
-import NotFound from "../pages/NotFound";
 import About from "../pages/main/About";
 import Dashboard from "../layouts/dashboard/Dashboard";
 import DashboardHome from "../pages/dashboard/DashboardHome";
@@ -17,6 +16,7 @@ import SignUp from "../pages/auth/SignUp";
 import ForgetPassword from "../pages/auth/ForgetPassword";
 import OtpVerify from "../pages/auth/OtpVerify";
 import ResetPassword from "../pages/auth/ResetPassword";
+import NotFound from "../components/general/NotFound";
 
 const router = createBrowserRouter([
   {
