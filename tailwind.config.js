@@ -7,19 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#8ABA51",
-        secondary: "#334A55",
-        base:"#E9EBF8"
-      }
+        primary: '#8aba51',
+        secondary: '#334a55',
+        subprimary: '#758888',
+      },
+      container: {
+        center: true, // Center the container
+        screens: {
+          sm: '100%', // Full width on small screens
+          md: '90%', // Full width on medium screens
+          lg: '1024px', // Custom width for large screens
+          xl: '1280px', // Custom width for extra large screens
+        },
+        margin: {
+          DEFAULT: '3rem', // Apply 1rem margin by default on both left and right
+        },
+        
+      },
     },
-    container: {
-      center: true,
-      screens: {
-        "2xl": "1500px"
-      }
-    }
   },
   plugins: [],
 }
 
- 
