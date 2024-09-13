@@ -3,11 +3,13 @@ import MainLogo from "../../assets/main-logo.png";
 import { useState, useEffect } from "react";
 import { MenuOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 export default function Navbar() {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
   const navigage = useNavigate();
+  const { loading, user } = useAuth();
 
   // Effect to check screen size and handle Drawer behavior
   useEffect(() => {
@@ -65,16 +67,20 @@ export default function Navbar() {
         <Button className="px-3 py-2 mr-4 bg-primary border-1 border-b-2 border-black text-white text-xs font-bold rounded-lg">
           Download App
         </Button>
-        <Button
-          role="link"
-          onClick={() => navigage("/auth/login")}
-          className="px-3 py-2 border-1 mr-4 border-b-2 border-black text-black text-xs font-bold rounded-lg"
-        >
-          Login
-        </Button>
-        <Button className="px-3 py-2 border-1 border-b-2 border-black text-black text-xs font-bold rounded-lg">
-          My Profile
-        </Button>
+        {/* conditional rendering on user */}
+        {user?.email ? (
+          <Button className="px-3 py-2 border-1 border-b-2 border-black text-black text-xs font-bold rounded-lg">
+            My Profile
+          </Button>
+        ) : (
+          <Button
+            role="link"
+            onClick={() => navigage("/auth/login")}
+            className="px-3 py-2 border-1 mr-4 border-b-2 border-black text-black text-xs font-bold rounded-lg"
+          >
+            Login
+          </Button>
+        )}
       </div>
     </div>
   );
@@ -87,6 +93,7 @@ const MenuBar = ({ isInline }) => {
     <Menu
       onClick={({ key }) => {
         navigate(key);
+        
       }}
       defaultSelectedKeys={window.location.pathname}
       className={`text-lg gap-4 border-none bg-white text-black`}

@@ -40,7 +40,6 @@ const Login = () => {
   const handleGoogleSignIn = async () => {
     try {
       const result = await signInWithGoogle();
-      console.log("ogin with google", result);
 
       // Navigate user to the intended route
       navigate(from, { replace: true });

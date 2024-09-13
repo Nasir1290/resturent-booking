@@ -9,11 +9,11 @@ export default function Auth() {
       {/* Outer container with responsive margin and padding */}
       <div className="w-full max-w-4xl mx-4 md:mx-8 my-6 md:my-8 flex items-center justify-center">
         {/* Bordered container with rounded corners and shadow */}
-        <div className="flex flex-col lg:flex-row items-center justify-center w-full bg-white border rounded-md shadow-lg overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full bg-white border-2 shadow rounded-md overflow-hidden">
           {/* Left section for image - Hidden on small screens */}
           <div className="hidden lg:flex md:w-[40%] h-full relative">
             <img
-              className="w-full h-full object-cover md:mr-6"
+              className="w-full h-full my-2 object-cover md:mr-6"
               src={AuthMainImage}
               alt="Auth"
             />
