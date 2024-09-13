@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import { MenuOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import useOpenProfile from "../../hooks/useOpenProfile";
 
 export default function Navbar() {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
   const navigage = useNavigate();
   const { loading, user } = useAuth();
+  const { isOpenProfile, setIsOpenProfile } = useOpenProfile();
 
   // Effect to check screen size and handle Drawer behavior
   useEffect(() => {
@@ -61,7 +63,7 @@ export default function Navbar() {
         placement="left"
         onClose={() => setIsShowMenu(false)}
       >
-        <MenuBar isInline={true} /> {/* Inline mode for Drawer */}
+        <MenuBar isInline={true} setIsShowMenu ={setIsShowMenu}/> {/* Inline mode for Drawer */}
       </Drawer>
       <div className="flex mr-2 md:mr-12">
         <Button className="px-3 py-2 mr-4 bg-primary border-1 border-b-2 border-black text-white text-xs font-bold rounded-lg">
@@ -69,7 +71,13 @@ export default function Navbar() {
         </Button>
         {/* conditional rendering on user */}
         {user?.email ? (
-          <Button className="px-3 py-2 border-1 border-b-2 border-black text-black text-xs font-bold rounded-lg">
+          <Button
+            onClick={() => {
+              navigage("/user-profile");
+              setIsOpenProfile(true);
+            }}
+            className="px-3 py-2 border-1 border-b-2 border-black text-black text-xs font-bold rounded-lg"
+          >
             My Profile
           </Button>
         ) : (
@@ -86,14 +94,14 @@ export default function Navbar() {
   );
 }
 
-const MenuBar = ({ isInline }) => {
+const MenuBar = ({ isInline, setIsShowMenu }) => {
   const navigate = useNavigate();
 
   return (
     <Menu
       onClick={({ key }) => {
         navigate(key);
-        
+        setIsShowMenu(false);
       }}
       defaultSelectedKeys={window.location.pathname}
       className={`text-lg gap-4 border-none bg-white text-black`}
@@ -105,7 +113,7 @@ const MenuBar = ({ isInline }) => {
         },
         {
           label: "Book A Table",
-          key: "/about",
+          key: "/book-a-table",
         },
         {
           label: "Food",

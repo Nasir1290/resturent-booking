@@ -17,6 +17,11 @@ import ForgetPassword from "../pages/auth/ForgetPassword";
 import OtpVerify from "../pages/auth/OtpVerify";
 import ResetPassword from "../pages/auth/ResetPassword";
 import NotFound from "../components/general/NotFound";
+import UserInfo from "../pages/user/UserInfo";
+import BookingHistory from "../pages/user/BookingHistory";
+import FavouriteItems from "../pages/user/FavouriteItems";
+import UserProfile from "../pages/user/UserProfile";
+import RestaurantBooking from "../pages/restaurent/RestaurentDetails";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +35,30 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "user-profile",
+        element: <UserProfile />,
+      },
+      {
+        path: "book-a-table",
+        element: <RestaurantBooking />,
+      },
+      {
+        path: "order-details",
+        element: <OrderDetails />,
+      },
+      {
+        path: "user-info",
+        element: <UserInfo />,
+      },
+      {
+        path: "booking-history",
+        element: <BookingHistory />,
+      },
+      {
+        path: "favourite-items",
+        element: <FavouriteItems />,
       },
       {
         path: "/foods",
@@ -64,10 +93,6 @@ const router = createBrowserRouter([
       {
         path: "earning",
         element: <Earning />,
-      },
-      {
-        path: "order-details",
-        element: <OrderDetails />,
       },
     ],
   },
