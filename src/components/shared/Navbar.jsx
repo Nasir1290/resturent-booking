@@ -2,7 +2,7 @@ import { Button, Drawer, Menu } from "antd";
 import MainLogo from "../../assets/main-logo.png";
 import { useState, useEffect } from "react";
 import { MenuOutlined } from "@ant-design/icons";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useOpenProfile from "../../hooks/useOpenProfile";
 
@@ -94,16 +94,24 @@ export default function Navbar() {
   );
 }
 
+
 const MenuBar = ({ isInline, setIsShowMenu }) => {
   const navigate = useNavigate();
+  const location = useLocation(); // Get the current route
+  const [selectedKey, setSelectedKey] = useState(location.pathname); // Set initial selected key
+
+  useEffect(() => {
+    setSelectedKey(location.pathname); // Update the selectedKey when the route changes
+  }, [location.pathname]);
 
   return (
     <Menu
       onClick={({ key }) => {
         navigate(key);
         setIsShowMenu(false);
+        setSelectedKey(key); // Set the selected key to the clicked menu item
       }}
-      defaultSelectedKeys={window.location.pathname}
+      selectedKeys={[selectedKey]} // Use selectedKeys instead of defaultSelectedKeys
       className={`text-lg gap-4 border-none bg-white text-black`}
       mode={isInline ? "inline" : "horizontal"}
       items={[
@@ -116,10 +124,12 @@ const MenuBar = ({ isInline, setIsShowMenu }) => {
           key: "/book-a-table",
         },
         {
-          label: "Food",
-          key: "/food",
+          label: "Foods",
+          key: "/foods",
         },
       ]}
     />
   );
 };
+
+

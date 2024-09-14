@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import RestaurentDetailsImage from "../../assets/restaurent-detail.png";
+import BookingModal from "./BookingModal";
 
 const RestaurentInfo = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="max-w-4xl mb-12 bg-white rounded-lg mt-8 mx-1 md:mx-auto shadow-md overflow-hidden">
       {/* Image Carousel Section */}
@@ -101,9 +103,12 @@ const RestaurentInfo = () => {
 
         {/* Book Now Button */}
         <div className="mt-6 flex justify-center">
-          <button className="bg- bg-secondary text-white w-full px-6 py-2 rounded-lg">
+          <button 
+          onClick={()=> setIsOpen(true)}
+          className="bg- bg-secondary text-white w-full px-6 py-2 rounded-lg">
             Book Now
           </button>
+          <BookingModal isOpen={isOpen} setIsOpen={setIsOpen}/>
         </div>
       </div>
     </div>

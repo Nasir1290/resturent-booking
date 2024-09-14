@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/main/Main";
 import Food from "../pages/main/Food";
-import Foods from "../pages/main/Foods";
+
 import Home from "../pages/main/Home";
 import TermsAndConditions from "../pages/main/TermsAndConditions";
 import About from "../pages/main/About";
@@ -22,6 +22,7 @@ import BookingHistory from "../pages/user/BookingHistory";
 import FavouriteItems from "../pages/user/FavouriteItems";
 import UserProfile from "../pages/user/UserProfile";
 import RestaurantBooking from "../pages/restaurent/RestaurentDetails";
+import Foods from "../pages/food/Foods";
 
 const router = createBrowserRouter([
   {

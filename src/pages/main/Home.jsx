@@ -2,11 +2,10 @@ import React from "react";
 import useAuth from "../../hooks/useAuth";
 import Loading from "../../components/general/Loading";
 import HeroSection from "../../components/home/HeroSection";
-import ProductCard from "../../components/product/ProductCard";
-import ProductDetails from "../../components/product/ProductDetails";
 import { IoIosArrowDropdown } from "react-icons/io";
 import ServiceSection from "../../components/home/ServiceSection";
 import MobileAppSection from "../../components/home/MobileAppSection";
+import ProductList from "../../components/product/ProductList";
 
 export default function Home() {
   const { user, loading } = useAuth();
@@ -26,7 +25,7 @@ export default function Home() {
           See All <IoIosArrowDropdown className=" md:text-lg ml-2" />{" "}
         </button>
       </div>
-      <ProductDetails />
+      <ProductList />
       <ServiceSection/>
       <MobileAppSection/>
     </div>
