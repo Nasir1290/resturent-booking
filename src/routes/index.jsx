@@ -18,11 +18,15 @@ import OtpVerify from "../pages/auth/OtpVerify";
 import ResetPassword from "../pages/auth/ResetPassword";
 import NotFound from "../components/general/NotFound";
 import UserInfo from "../pages/user/UserInfo";
-import BookingHistory from "../pages/user/BookingHistory";
 import FavouriteItems from "../pages/user/FavouriteItems";
 import UserProfile from "../pages/user/UserProfile";
 import RestaurantBooking from "../pages/restaurent/RestaurentDetails";
 import Foods from "../pages/food/Foods";
+import ProductDetails from "../components/product/ProductDetails";
+import CartDetails from "../pages/food/CartDetails";
+import RestaurentsPage from "../pages/restaurent/RestaurentsPage";
+import ResturentDetails from "../pages/restaurent/RestaurentDetails";
+import PaymentMethod from "../components/product/PaymentMethod";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +47,11 @@ const router = createBrowserRouter([
       },
       {
         path: "book-a-table",
-        element: <RestaurantBooking />,
+        element: <RestaurentsPage />,
+      },
+      {
+        path: "hotel-details",
+        element: <ResturentDetails />,
       },
       {
         path: "order-details",
@@ -54,8 +62,12 @@ const router = createBrowserRouter([
         element: <UserInfo />,
       },
       {
-        path: "booking-history",
-        element: <BookingHistory />,
+        path: "cart-details",
+        element: <CartDetails />,
+      },
+      {
+        path: "payment-method",
+        element: <PaymentMethod />,
       },
       {
         path: "favourite-items",
@@ -64,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: "/foods",
         element: <Foods />,
+      },
+      {
+        path: "/product-details",
+        element: <ProductDetails />,
       },
       {
         path: "/about",

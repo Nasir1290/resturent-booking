@@ -3,7 +3,7 @@ import RestaurentInfo from "../../components/restaurent/RestaurentInfo";
 import ReviewSection from "../../components/restaurent/ReviewSection";
 import BookingModal from "../../components/restaurent/BookingModal";
 
-const RestaurantBooking = () => {
+const ResturentDetails = () => {
   return (
     <div>
       <RestaurentInfo/>
@@ -13,4 +13,4 @@ const RestaurantBooking = () => {
   );
 };
 
-export default RestaurantBooking;
+export default ResturentDetails;
