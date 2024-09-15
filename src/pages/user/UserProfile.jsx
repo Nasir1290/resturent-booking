@@ -214,6 +214,7 @@ const UserProfile = () => {
               await signOut(auth);
               navigate("/home");
               toast.warning("Successfully logged out", toastValue);
+              setIsOpenProfile(false);
             } else {
               navigate(key);
               setIsOpenProfile(false);
