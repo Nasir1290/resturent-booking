@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import toastValue from "../../components/shared/toastValue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const RestaurentCard = ({ hotel }) => {
+    useEffect(() => {
+      AOS.init({ duration: 1000 }); // Initializes AOS with a duration of 1000ms
+    }, []);
   return (
     // Make the card container a flexbox and set it to grow vertically
-    <div className="max-w-sm w-full bg-white shadow-lg rounded-lg overflow-hidden mx-auto my-4 flex flex-col">
+    <div data-aos="fade-in" className="max-w-sm w-full bg-white shadow-lg rounded-lg overflow-hidden mx-auto my-4 flex flex-col">
       {/* Wrap the image with a Link to make it clickable */}
       <Link to={`/hotel/${hotel.id}`}>
         <img

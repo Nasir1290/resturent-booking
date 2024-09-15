@@ -1,17 +1,16 @@
-
-
-
-
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import toastValue from "../shared/toastValue";
 
 const ProductCard = ({ product }) => {
+
   return (
     <div className="flex flex-col shadow-lg rounded-lg p-4 max-w-full">
       {/* Image div with Link */}
-      <div className="w-full h-56 md:h-64 lg:h-72 shadow-md rounded-lg overflow-hidden flex justify-center items-center">
+      <div
+        className="w-full h-56 md:h-64 lg:h-72 shadow-md rounded-lg overflow-hidden flex justify-center items-center"
+      >
         <Link to={`/food/${product.id}`}>
           {/* Add transition and scale effect */}
           <img
@@ -27,7 +26,7 @@ const ProductCard = ({ product }) => {
         {/* Product title with Link */}
         <Link to="/product-details">
           <h2 className="text-lg lg:text-xl font-bold mb-2 truncate text-gray-900 cursor-pointer hover:text-green-600 transition-colors">
-            {product.title }
+            {product.title}
           </h2>
         </Link>
 
@@ -41,11 +40,12 @@ const ProductCard = ({ product }) => {
         </h4>
 
         {/* Order Now button */}
-        <button onClick={() => {
-
-          toast.success("Item Add To Cart Successfully",toastValue)
-
-        }} className="bg-secondary text-white py-2 px-4 rounded-lg mt-2 hover:bg-green-600 transition-colors">
+        <button
+          onClick={() => {
+            toast.success("Item Add To Cart Successfully", toastValue);
+          }}
+          className="bg-secondary text-white py-2 px-4 rounded-lg mt-2 hover:bg-green-600 transition-colors"
+        >
           Order Now
         </button>
       </div>

@@ -290,7 +290,7 @@ const router = createBrowserRouter([
         path: "favourite-items",
         element: (
           <Suspense fallback={<Loading />}>
-            <FavouriteItems />
+            <Home />
           </Suspense>
         ),
       },
