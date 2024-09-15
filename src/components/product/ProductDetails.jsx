@@ -3,6 +3,8 @@ import FoodDetailsImage from "../../assets/food-details.png";
 import React, { useState } from "react";
 import { allFoodData } from "../../data.js/foodData";
 import ProductList from "./ProductList";
+import { toast } from "react-toastify";
+import toastValue from "../shared/toastValue";
 
 const ProductDetails = () => {
   const [quantity, setQuantity] = useState(2);
@@ -87,7 +89,9 @@ const ProductDetails = () => {
               </button>
             </div>
 
-            <button className="flex-1 bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700">
+            <button
+            onClick={() => toast.success("Add To Cart Successfully.",toastValue)}
+            className="flex-1 bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700">
               Add to cart
             </button>
 
