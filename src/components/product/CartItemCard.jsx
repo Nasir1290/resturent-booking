@@ -32,6 +32,14 @@ const CartItemCard = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center mr-6 mb-2">
+        <button className=" px-16 py-2 bg-primary text-sm font-semibold text-white mr-4 rounded ">
+          Details
+        </button>
+        <button className=" px-16 py-2 bg-orange-500 text-sm font-semibold text-white rounded ">
+          Remove
+        </button>
+      </div>
     </div>
   );
 };

@@ -231,14 +231,14 @@ const UserProfile = () => {
                   Personal Details
                 </div>
               ),
-              key: "/user-info",
+              key: "/user",
               style: {
                 color:
-                  window?.location?.pathname === "/user-info"
+                  window?.location?.pathname === "/user"
                     ? "#ffffff"
                     : "#f0f0f0",
                 backgroundColor:
-                  window?.location?.pathname === "/user-info"
+                  window?.location?.pathname === "/user"
                     ? "#1d3557"
                     : "#809292",
               },

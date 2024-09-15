@@ -12,7 +12,7 @@ export const allFoodData = [
         category: 'pizza'
     },
     {
-        id: 'b8c491bb-5d47-42b3-bf4b-985ffae02b55',
+        id: 'b8c491bb-5d47-42b3-bf4b-985ff02b55',
         image: 'https://images.unsplash.com/photo-1593504049359-74330189a345?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBpenphfGVufDB8fDB8fHww',
         title: 'Pepperoni Pizza',
         rating: 4,
@@ -34,7 +34,7 @@ export const allFoodData = [
         category: 'pizza'
     },
     {
-        id: '23f68764-b10d-4e5f-8571-13636f4026e3',
+        id: '23f68764-b10d-4e5f71-13636f4026e3',
         image: 'https://images.unsplash.com/photo-1589187151053-5ec8818e661b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBpenphfGVufDB8fDB8fHww',
         title: 'Cheese Pizza',
         rating: 5,
@@ -56,7 +56,7 @@ export const allFoodData = [
         category: 'pizza'
     },
     {
-        id: 'fe021196-e7ef-4b37-a091-21f670e21199',
+        id: 'fe021196-e7ef-4b37-a091-70e21199',
         image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGl6emF8ZW58MHx8MHx8fDA%3D',
         title: 'Margherita Pizza',
         rating: 5,
@@ -78,7 +78,7 @@ export const allFoodData = [
         category: 'pizza'
     },
     {
-        id: '56d6a86d-01b8-4113-8464-9ad4238f2056',
+        id: '56d6a86d-01b8-4113-8464-938f2056',
         image: 'https://plus.unsplash.com/premium_photo-1679924471066-dd984e92f395?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGl6emF8ZW58MHx8MHx8fDA%3D',
         title: 'BBQ Chicken Pizza',
         rating: 5,
@@ -111,7 +111,7 @@ export const allFoodData = [
         category: 'rice'
     },
     {
-        id: 'e0df5979-230d-4e47-88d7-d9f1a18b81e0',
+        id: 'e0df5979-230d-4e47-88d7-1a18b81e0',
         image: 'https://images.unsplash.com/photo-1569723650490-5d19d91749a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHJpY2V8ZW58MHx8MHx8fDA%3D',
         title: 'Classic Rice and Curry',
         rating: 5,
@@ -133,7 +133,7 @@ export const allFoodData = [
         category: 'rice'
     },
     {
-        id: 'ff8dcb69-663b-4a19-bb8f-d345cc34e99a',
+        id: 'ff8dcb69-663b-4a19-bb8f-d5cc34e99a',
         image: 'https://images.unsplash.com/photo-1500040760498-8be2dccbdea7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHJpY2V8ZW58MHx8MHx8fDA%3D',
         title: 'Mutton Biryani',
         rating: 5,
@@ -144,7 +144,7 @@ export const allFoodData = [
         category: 'rice'
     },
     {
-        id: 'c95f9e48-2f07-47a2-b5a7-dad2230b0070',
+        id: 'c95f9e48-2f07-47a2-b5a7-dad2230070',
         image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJpY2V8ZW58MHx8MHx8fDA%3D',
         title: 'Chicken Biryani',
         rating: 5,
@@ -166,7 +166,7 @@ export const allFoodData = [
         category: 'rice'
     },
     {
-        id: '3f28ed56-66b3-4877-beb8-f7d287c7dd99',
+        id: '3f28ed56-66b3-4877-beb8-f287c7dd99',
         image: 'https://images.unsplash.com/photo-1555529535-5323b3cc7b4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJpY2V8ZW58MHx8MHx8fDA%3D',
         title: 'Butter Chicken with Rice',
         rating: 5,
@@ -243,7 +243,7 @@ export const allFoodData = [
         category: 'chicken'
     },
     {
-        id: 'ab14fc47-3b50-4d8f-9b1a-54f0b49d1689',
+        id: 'ab14fc47-30-4d8f-9b1a-54f0b49d1689',
         image: 'https://images.unsplash.com/photo-1501735972267-d5c1bc03655c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHN1c2hpfGVufDB8fDB8fHww',
         title: 'Sushi Platter',
         rating: 5,
@@ -265,7 +265,7 @@ export const allFoodData = [
         category: 'sushi'
     },
     {
-        id: 'df96c19b-0f8d-4a35-9cb6-0b1fa720989d',
+        id: 'df96c19b-0f8d-4a35-9cb6-0b1720989d',
         image: 'https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHN1c2hpfGVufDB8fDB8fHww',
         title: 'Vegetable Sushi',
         rating: 4,
@@ -309,7 +309,7 @@ export const allFoodData = [
         category: 'sushi'
     },
     {
-        id: 'c97f69f8-f352-4643-bc3f-0a5190e9d144',
+        id: 'c97f69f8-f352-43-bc3f-0a5190e9d144',
         image: 'https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHN1c2hpfGVufDB8fDB8fHww',
         title: 'Sushi Roll Combo',
         rating: 4,
@@ -331,7 +331,7 @@ export const allFoodData = [
         category: 'sushi'
     },
     {
-        id: 'f15fa7df-479d-4f6d-8f8d-bf2e3f5d92c1',
+        id: 'f15fa7df-479d-4f6d-8f8d-bf2e3f5d92c',
         image: 'https://images.unsplash.com/photo-1654876203651-64761cbcc5cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2FiYWJ8ZW58MHx8MHx8fDA%3D',
         title: 'Shami Kabab',
         rating: 4,
@@ -353,7 +353,7 @@ export const allFoodData = [
         category: 'kabab'
     },
     {
-        id: '42e92553-4c33-409d-b85f-157c6589a5b2',
+        id: '42e92553-4c33-409d-b85f-157c6589a',
         image: 'https://images.unsplash.com/photo-1659275798347-d8e9000c388c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2FiYWJ8ZW58MHx8MHx8fDA%3D',
         title: 'Shish Kabab',
         rating: 4,
@@ -375,7 +375,7 @@ export const allFoodData = [
         category: 'kabab'
     },
     {
-        id: '28f68e09-4b0d-4667-a046-d65c8f8bde29',
+        id: '28f68e09-4b0d-4667-a046-d65c8f8b',
         image: 'https://plus.unsplash.com/premium_photo-1661310070271-8dd22feaf3a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2FiYWJ8ZW58MHx8MHx8fDA%3D',
         title: 'Beef Kabab Platter',
         rating: 5,
@@ -398,7 +398,7 @@ export const allFoodData = [
     },
     {
         id: 'd115ab38-4b41-4df1-8223-5db66a013f96',
-        image: 'https://images.unsplash.com/photo-1599577180589-0a0b958016b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZyeXxlbnwwfHwwfHx8MA%3D%3D',
+        image: 'https://plus.unsplash.com/premium_photo-1672774750509-bc9ff226f3e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJ5fGVufDB8fDB8fHww',
         title: 'Fried Chicken Wings',
         rating: 4,
         totalRatingCount: 112,
@@ -408,7 +408,7 @@ export const allFoodData = [
         category: 'fry'
     },
     {
-        id: 'e8f9b738-f366-4f85-b3e2-707c1c8cf2ff',
+        id: 'e8f9b738-f366-4f85-b3e2-707c1c',
         image: 'https://images.unsplash.com/photo-1532987620153-4a864cb90fed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZyeXxlbnwwfHwwfHx8MA%3D%3D',
         title: 'Spicy Chicken Fry',
         rating: 5,
@@ -419,7 +419,7 @@ export const allFoodData = [
         category: 'fry'
     },
     {
-        id: 'd115ab38-4b41-4df1-8223-5db66a013f96',
+        id: 'd115ab38-4b41-4df1-8223-5d',
         image: 'https://images.unsplash.com/photo-1529259266118-cf22737f713f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZyeXxlbnwwfHwwfHx8MA%3D%3D',
         title: 'Fried Chicken Wings',
         rating: 4,
@@ -445,145 +445,4 @@ export const allFoodData = [
 
 
 
-export const hotelData = [
-    {
-        id: '1a2b3c4d',
-        title: 'The Grand Riviera',
-        image: 'https://images.unsplash.com/photo-1506813257165-8c4bffd3a57f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Miami, Florida',
-        description: 'A luxury beachfront resort with stunning views of the Atlantic Ocean, featuring modern amenities and fine dining.'
-    },
-    {
-        id: '2b3c4d5e',
-        title: 'Mountain Lodge Escape',
-        image: 'https://images.unsplash.com/photo-1622396089527-b40d16c63aba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Aspen, Colorado',
-        description: 'An upscale mountain lodge offering cozy accommodations, a ski-in/ski-out experience, and scenic mountain views.'
-    },
-    {
-        id: '3c4d5e6f',
-        title: 'Urban Chic Hotel',
-        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'New York, New York',
-        description: 'A stylish hotel in the heart of the city, offering modern rooms, a rooftop bar, and easy access to major attractions.'
-    },
-    {
-        id: '4d5e6f7g',
-        title: 'Seaside Paradise Resort',
-        image: 'https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Malibu, California',
-        description: 'A luxurious resort located on the beach with breathtaking ocean views, gourmet dining, and premium spa services.'
-    },
-    {
-        id: '5e6f7g8h',
-        title: 'Lakeside Retreat',
-        image: 'https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Lake Tahoe, Nevada',
-        description: 'A serene lakeside resort offering a peaceful retreat with water activities, hiking trails, and a cozy ambiance.'
-    },
-    {
-        id: '6f7g8h9i',
-        title: 'The Royal Palm Resort',
-        image: 'https://images.unsplash.com/photo-1506059612708-99d6c258160e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Orlando, Florida',
-        description: 'A family-friendly resort featuring a water park, spacious suites, and close proximity to popular theme parks.'
-    },
-    {
-        id: '7g8h9i0j',
-        title: 'Hilltop Luxury Suites',
-        image: 'https://plus.unsplash.com/premium_photo-1674651240687-92b4ad15d0ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Napa Valley, California',
-        description: 'A collection of private suites perched on a hilltop, offering stunning vineyard views, wine tastings, and fine dining.'
-    },
-    {
-        id: '8h9i0j1k',
-        title: 'Tropical Haven Resort',
-        image: 'https://images.unsplash.com/photo-1490122417551-6ee9691429d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Honolulu, Hawaii',
-        description: 'An oceanfront resort with lush gardens, a world-class spa, and direct access to the beach.'
-    },
-    {
-        id: '9i0j1k2l',
-        title: 'The Majestic Hotel',
-        image: 'https://images.unsplash.com/photo-1725345653429-8b3926cc229c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Paris, France',
-        description: 'A historic hotel located near the Eiffel Tower, offering elegant rooms, fine dining, and breathtaking city views.'
-    },
-    {
-        id: '0j1k2l3m',
-        title: 'Desert Oasis Resort',
-        image: 'https://plus.unsplash.com/premium_photo-1675745329378-5573c360f69f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Phoenix, Arizona',
-        description: 'A desert resort with beautiful scenery, luxurious pools, and outdoor adventure activities.'
-    },
-    {
-        id: '1k2l3m4n',
-        title: 'Snowpeak Lodge',
-        image: 'https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Whistler, Canada',
-        description: 'A premier ski resort with access to some of the best skiing and snowboarding slopes, plus relaxing spa amenities.'
-    },
-    {
-        id: '2l3m4n5o',
-        title: 'The Coastal Escape',
-        image: 'https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Santorini, Greece',
-        description: 'A stunning hotel perched on the cliffs of Santorini, offering panoramic ocean views, infinity pools, and sunset dining.'
-    },
-    {
-        id: '3m4n5o6p',
-        title: 'Cityscape Towers',
-        image: 'https://images.unsplash.com/photo-1505576391880-b3f9d713dc4f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Tokyo, Japan',
-        description: 'A modern hotel in the bustling heart of Tokyo, featuring high-tech rooms, rooftop lounges, and easy metro access.'
-    },
-    {
-        id: '4n5o6p7q',
-        title: 'The Highlander Inn',
-        image: 'https://plus.unsplash.com/premium_photo-1663093806285-d905ca96c661?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Edinburgh, Scotland',
-        description: 'A charming inn with traditional decor, offering a cozy stay in the heart of the historic city, near Edinburgh Castle.'
-    },
-    {
-        id: '5o6p7q8r',
-        title: 'Island View Hotel',
-        image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Bora Bora, French Polynesia',
-        description: 'An exclusive overwater bungalow resort with crystal-clear lagoon views, luxury amenities, and water sports activities.'
-    },
-    {
-        id: '6p7q8r9s',
-        title: 'Riverside Inn',
-        image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Bruges, Belgium',
-        description: 'A charming hotel along the canals of Bruges, offering a blend of historic charm and modern comfort with scenic river views.'
-    },
-    {
-        id: '7q8r9s0t',
-        title: 'Jungle Paradise Resort',
-        image: 'https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdGVsfGVufDB8fDB8fHww',
-        location: 'Bali, Indonesia',
-        description: 'A tropical jungle retreat offering luxury villas, private pools, and an immersive nature experience in the heart of Bali.'
-    },
-    {
-        id: '8r9s0t1u',
-        title: 'The Old Town Hotel',
-        image: 'https://plus.unsplash.com/premium_photo-1675745329954-9639d3b74bbf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWx8ZW58MHx8MHx8fDA%3D',
-        location: 'Prague, Czech Republic',
-        description: 'A boutique hotel located in the historic Old Town of Prague, featuring elegant rooms and proximity to iconic landmarks.'
-    },
-    {
-        id: '9s0t1u2v',
-        title: 'Luxury Waterfront Resort',
-        image: 'https://images.unsplash.com/photo-1549294413-26f195200c16?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG90ZWx8ZW58MHx8MHx8fDA%3D',
-        location: 'Dubai, UAE',
-        description: 'A lavish resort located along the Dubai Marina, offering world-class dining, a private beach, and breathtaking views of the skyline.'
-    },
-    {
-        id: '0t1u2v3w',
-        title: 'The Serenity Villa',
-        image: 'https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWx8ZW58MHx8MHx8fDA%3D',
-        location: 'Phuket, Thailand',
-        description: 'A private beachfront villa offering a peaceful escape with luxurious amenities, infinity pools, and spa services.'
-    }
-];
+

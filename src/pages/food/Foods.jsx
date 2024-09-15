@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import ProductList from "../../components/product/ProductList";
-import {useRef} from "react"
+import { useRef } from "react";
+import { allFoodData } from "../../data.js/foodData";
 
 const Foods = () => {
+  const [allData, setAllData] = useState([...allFoodData]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
   return (
     <div>
       <div>
         <div className=" mb-8  p-4">
           {/* Food Navigation */}
-          <FoodNavigation />
+          <FoodNavigation setSelectedCategory={setSelectedCategory} />
 
           {/* Search Bar */}
           <SearchBar />
@@ -19,14 +23,15 @@ const Foods = () => {
         <h1 className="text-3xl font-semibold text-center mt-8">
           Explore <span className="text-primary mr-2">Yummy</span>Recipe
         </h1>
-        <ProductList />
+        {/* all Foods */}
+        <ProductList selectedCategory={selectedCategory} products={allData} />
       </div>
     </div>
   );
 };
 
-const FoodNavigation = () => {
-  const [activeItem, setActiveItem] = useState("Rice"); // Default active item
+const FoodNavigation = ({ setSelectedCategory }) => {
+  const [activeItem, setActiveItem] = useState("All"); // Default active item
   const categoriesRef = useRef(null);
 
   // Function to scroll the categories container to the left
@@ -51,7 +56,7 @@ const FoodNavigation = () => {
 
   // Function to handle item click and change the active state
   const handleItemClick = (item) => {
-    setActiveItem(item); // Update active item
+    setActiveItem(item);
   };
 
   return (
@@ -82,19 +87,24 @@ const FoodNavigation = () => {
         ref={categoriesRef}
         className="flex items-center space-x-4 overflow-x-auto scrollbar-hide"
       >
-        {["Pizza", "Rice", "Kabab", "Sushi", "Fry", "Chicken"].map((item) => (
-          <button
-            key={item}
-            onClick={() => handleItemClick(item)}
-            className={`px-4 py-2 rounded ${
-              activeItem === item
-                ? "bg-gray-500 text-white" // Active styles
-                : "bg-transparent hover:bg-gray-200" // Inactive styles
-            }`}
-          >
-            {item}
-          </button>
-        ))}
+        {["All", "Kabab", "Sushi", "Pizza", "Rice", "Fry", "Chicken"].map(
+          (item) => (
+            <button
+              key={item}
+              onClick={() => {
+                handleItemClick(item);
+                setSelectedCategory(item);
+              }}
+              className={`px-4 py-2 rounded ${
+                activeItem === item
+                  ? "bg-gray-500 text-white" // Active styles
+                  : "bg-transparent hover:bg-gray-200" // Inactive styles
+              }`}
+            >
+              {item}
+            </button>
+          )
+        )}
       </div>
 
       {/* Right Arrow Button */}
@@ -120,7 +130,6 @@ const FoodNavigation = () => {
     </div>
   );
 };
-
 
 const SearchBar = () => {
   return (
